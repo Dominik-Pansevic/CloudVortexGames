@@ -1,0 +1,22 @@
+<%- include ("header") -%>
+<section id="assetsCollection" class="pagePaddingCollection">
+  <div class="container">
+    <div class="row">
+
+      <%    for(var i = 0; i < assetCollection.length; i++) { %>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 feature-box">
+        <img class="testimonial-image assetsCollectionImage" src=<%= assetCollection[i] %> alt="">
+        <a href=<%= itchLinks[i] %> class="btn btn-outline-dark btn-sm download-button" role="button"><i class="fab fa-itch-io"></i> Itch.io </a>
+        <a href="" class="btn btn-outline-dark btn-sm download-button" role="button"><i class="fab fa-unity"></i>Unity Asset Store</a>
+
+      </div>
+
+      <%  } %>
+
+    </div>
+
+  </div>
+
+</section>
+<%- include ("footer") -%>
